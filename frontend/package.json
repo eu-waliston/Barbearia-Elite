@@ -1,0 +1,16 @@
+{
+  "name": "barber-shop-frontend",
+  "version": "1.0.0",
+  "scripts": {
+    "build-css": "sass src/css/main.scss dist/css/main.css --no-source-map",
+    "watch-css": "sass --watch src/css/main.scss dist/css/main.css --no-source-map",
+    "dev": "vite",
+    "start": "concurrently \"npm run watch-css\" \"npm run dev\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "live-server": "^1.2.2",
+    "sass": "^1.66.1",
+    "vite": "^7.3.1"
+  }
+}
